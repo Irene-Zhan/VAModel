@@ -171,7 +171,6 @@ public class MoveTo : MonoBehaviour
         if (Vector3.Distance(agent.transform.position, Camera.main.transform.position)> 8)
         {
             agent.destination = Camera.main.transform.position;
-
             distracted = true;
             textToSpeech.StartSpeaking("Would you like to continue to " + cur_destination);
 
